@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Chat</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center; /* Center the content horizontally */
+            align-items: flex-start; /* Align content to the top */
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px; /* Adjust as needed */
+            display: flex;
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-top: 20px; /* Add some space at the top */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar {
+            width: 300px;
+            background-color: #f5f5f5; /* Light grey background */
+            padding: 20px;
+            box-sizing: border-box;
+            border-right: 1px solid #ddd;
+        }
+
+        .chat-area {
+            flex-grow: 1;
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sidebar-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            justify-content: space-between;
+        }
+
+        .sidebar-header img { /* Assuming the logo is an image */
+            width: 30px; /* Adjust size as needed */
+            height: 30px;
+            /* Add any styling for the logo here */
+        }
+
+        .buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .button {
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .sign-in {
+            background-color: #fff;
+            color: black;
+            border: 1px solid #ccc; /* Add a subtle border */
+        }
+
+        .register {
+            background-color: black;
+            color: white;
+        }
+
+        .chat-item {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #fff; /* White background for each chat item */
+            margin-bottom: 10px;
+            cursor: pointer; /* Indicate it's clickable */
+        }
+
+        .chat-item:hover {
+            background-color: #eee;
+        }
+
+        .chat-item-icon {
+            width: 30px; /* Adjust as needed */
+            height: 30px;
+            background-color: #ccc;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+
+        .chat-item-text {
+            flex-grow: 1;
+        }
+
+        .chat-item-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .chat-item-description {
+            color: #777;
+        }
+
+        .message-input {
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: auto; /* Push it to the bottom */
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <img src="" alt="Logo">  <!-- Replace "placeholder.png" with your logo -->
+                <div class="buttons">
+                    <button class="button sign-in">Sign in</button>
+                    <button class="button register">Register</button>
+                </div>
+            </div>
+            <!-- Chat list -->
+            <div class="chat-list">
+                <div class="chat-item">
+                    <div class="chat-item-icon"></div>
+                    <div class="chat-item-text">
+                        <div class="chat-item-title">Title</div>
+                        <div class="chat-item-description">Description</div>
+                    </div>
+                </div>
+                <div class="chat-item">
+                    <div class="chat-item-icon"></div>
+                    <div class="chat-item-text">
+                        <div class="chat-item-title">Title</div>
+                        <div class="chat-item-description">Description</div>
+                    </div>
+                </div>
+                <div class="chat-item">
+                    <div class="chat-item-icon"></div>
+                    <div class="chat-item-text">
+                        <div class="chat-item-title">Title</div>
+                        <div class="chat-item-description">Description</div>
+                    </div>
+                </div>
+                <div class="chat-item">
+                    <div class="chat-item-icon"></div>
+                    <div class="chat-item-text">
+                        <div class="chat-item-title">Title</div>
+                        <div class="chat-item-description">Description</div>
+                    </div>
+                </div>
+                <div class="chat-item">
+                    <div class="chat-item-icon"></div>
+                    <div class="chat-item-text">
+                        <div class="chat-item-title">Title</div>
+                        <div class="chat-item-description">Description</div>
+                    </div>
+                </div>
+                <div class="chat-item">
+                    <div class="chat-item-icon"></div>
+                    <div class="chat-item-text">
+                        <div class="chat-item-title">Title</div>
+                        <div class="chat-item-description">Description</div>
+                    </div>
+                </div>
+                <div class="chat-item">
+                    <div class="chat-item-icon"></div>
+                    <div class="chat-item-text">
+                        <div class="chat-item-title">Title</div>
+                        <div class="chat-item-description">Description</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="chat-area">
+            <!-- Chat content will go here. For this example, it's just the input -->
+            <input type="text" class="message-input" placeholder="Value">
+        </div>
+    </div>
+
+</body>
+</html>

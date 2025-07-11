@@ -1,0 +1,123 @@
+
+body{
+display: flex;
+align-items: center;
+justify-content: center;
+height: 90vh;
+background-color: whitesmoke;
+font-family: Comfortaa;
+}
+
+.wrapper {
+    width: 21vh;
+    background-color: rgba(255, 255, 255, 0.815);
+    border-radius: 2%;
+    padding: 2vh;
+    box-shadow: 1vh 1vh  rgb(211, 211, 211);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+
+    
+    
+}
+
+.field{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.form header{
+font-size: 4vh;
+font-weight: bold;
+border-bottom: dotted 10px whitesmoke;
+margin-bottom: 1vh;
+
+}
+
+.form button{
+    background-color: rgb(211, 211, 211);
+    border-radius: 2vh;
+    display: flex;
+    margin-bottom: 1vh;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    width: 20.5vh;
+    border: none;
+    font-family: Comfortaa;
+    font-weight: bold;
+    cursor: pointer;
+    height: 4vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    word-break: break-all
+    
+}
+
+
+
+.form button:hover {
+    background-color:rgb(236, 234, 234) ;
+}
+
+.form input{
+    align-items: center;
+    justify-content: center;
+    border-radius: 2vh;
+    height: 4vh;
+    border: none;
+    width: 20vh;
+    margin-bottom: 1vh;
+    background-color: rgb(233, 233, 233);
+    font-family: Comfortaa;
+    font-weight: 200;
+    text-align: center;
+    margin-top: 1vh;
+    
+    
+}
+
+.errorMessage {
+    color: brown;
+    background-color: rgb(253, 165, 165);
+    border: 1px solid brown;
+    border-radius: 2vh;
+    width: 20vh;
+    font-size: 12pt;
+    text-align: center;
+    justify-content: center;
+    vertical-align: middle;
+    display: none;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+
+
+#backRegisterButton{
+    display: none;
+}
+
+
+#registrationWindow{
+    display:inline-block;
+}
+
+#registerButton {
+    
+    display: none;
+}
+
+#registrationButton{
+    display: flex;
+}
+
+#repeatPassword{
+    display: none;
+}
+
